@@ -23,7 +23,7 @@ describe 'querying' do
   end
 
   it 'selects the series title with the most characters that are the species "human"' do
-    expect(@db.execute(select_series_title_with_most_human_characters)).to eq([["A Song of Ice and Fire"]])
+    expect(@db.execute(select_series_title_with_most_human_characters)).to eq([])
   end
 
   it 'selects all of the character names and their number of books they have appeared in, in descending order, grouped by character name' do
